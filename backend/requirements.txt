@@ -1,0 +1,6 @@
+Flask
+requests
+beautifulsoup4
+undetected-chromedriver
+flask_cors
+setuptools
