@@ -4,39 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Board</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 <body>
     <h1>Job Listings</h1>
-    <form method="get" action="/">
-        <input type="text" name="search" placeholder="Search for jobs..." value="{{ search }}">
-        <button type="submit">Search</button>
-    </form>
     <ul>
         {% for job in jobs %}
         <li>

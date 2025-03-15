@@ -97,7 +97,7 @@ def scrape_jobs(keyword):
             link = title_tag["href"] if title_tag else None
 
             jobs.append((
-title_tag.text.strip() if title_tag else "N/A",
+                title_tag.text.strip() if title_tag else "N/A",
                 company_tag.text.strip() if company_tag else "N/A",
                 location_tag.text.strip() if location_tag else "N/A",
                 experience_tag.text.strip() if experience_tag else "N/A",
